@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('head', {}); %>
+    <%- include('headd', {}); %>
+    <%- include('background', {}); %>
+    <title>写文章</title>
+</head>
+<style>
+    .d1{
+        width: 800px;
+        height: 300px;
+        border: solid 1px  #4d4c4c;
+        margin-left: 113px;
+    }
+</style>
+<body>
+  
+    <form class="layui-form" action="">
+    <div class="layui-input-block">
+        <input type="text" name="title" required placeholder="请输入文章标题" 
+       class="layui-input">
+    </div>
+    <div class="d1">
+
+    </div>
+
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+          <button class="layui-btn layui-bg-blue">发布</button>
+          
+        </div>
+      </div>
+    </form>
+</body>
+</html>

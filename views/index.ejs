@@ -2,13 +2,63 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <%- include('head', {}); %>
+    <%- include('headd', {}); %>
+    <%- include('background', {}); %>
   </head>
+  
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <h1>
-      ok
-    </h1>
+   
+<table class="layui-table" lay-skin="line">
+  <colgroup>
+    <col width="150">
+    <col width="200">
+    <col>
+  </colgroup>
+  <thead>
+    <tr>
+      <th>序</th>
+      <th>新增资讯</th>
+      <th>加入时间</th>
+      <th>操作</th>
+    </tr> 
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>
+        <a  href="/xiangq">第一条资讯</a>
+      </td>
+      <td>2016-11-29</td>
+      <td>
+        <div class="layui-btn-group">
+          <a href="/write">
+          <button type="button" class="layui-btn">编辑</button></a>
+          <a href="/write">
+          <button type="button" class="layui-btn">删除</button>
+        </a>
+        </div>
+      </td>
+      <hr class="layui-bg-blue">
+    </tr>
+    
+
+    <tr>
+      <td>2</td>
+      <td>
+        <a href="/xiangq">第二条资讯</a>
+      </td>
+      <td>2016-11-28</td>
+      <td>
+        <div class="layui-btn-group">
+          
+          <button type="button" class="layui-btn">编辑</button>
+          <button type="button" class="layui-btn">删除</button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
   </body>
 </html>

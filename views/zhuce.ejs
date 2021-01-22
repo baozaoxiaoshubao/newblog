@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('head', {}); %>
+    <%- include('background', {}); %>
+    <title>注册页面</title>
+</head>
+<body>
+    
+    <div class="layui-container">  
+    <h2 class="layui-bg-blue" style="text-align: center;">欢迎注册</h2>
+        <div class="layui-row">
+            <form class="layui-form" action="">
+                <div class="layui-form-item">
+                  <label class="layui-form-label">用户名</label>
+                  <div class="layui-input-block">
+                    <input type="text" name="title" required placeholder="请输入用户名" 
+                   class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">密码</label>
+                <div class="layui-input-block">
+                  <input type="password" name="title" required placeholder="请输入密码" 
+                  class="layui-input">
+                  <input type="password" name="title" required placeholder="请再次输入密码" 
+                  class="layui-input">
+              </div>
+          </div>
+          <div class="layui-form-item">
+            <div class="layui-input-block">
+              <button class="layui-btn">注册</button>
+              <p>已经注册，<a style="color: rgb(95, 171, 238);" href="/login">立即登录</a></p>
+            </div>
+          </div>
+            </form>
+          </div>
+        </div>
+</body>
+</html>
