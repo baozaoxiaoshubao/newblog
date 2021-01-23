@@ -6,7 +6,15 @@
     <%- include('headd', {}); %>
     <%- include('background', {}); %>
   </head>
-  
+  <style>
+    .a1{
+      color: rgb(255, 97, 150);
+      font-size: 15px;
+      float: right;
+      margin-top: 8px;
+      margin-right: 20px;
+    }
+  </style>
   <body>
    
 <table class="layui-table" lay-skin="line">
@@ -32,14 +40,14 @@
       <td>2016-11-29</td>
       <td>
         <div class="layui-btn-group">
-          <a href="/write">
-          <button type="button" class="layui-btn">编辑</button></a>
-          <a href="/write">
-          <button type="button" class="layui-btn">删除</button>
+          <a class="a1" href="/write">
+          删除</a>
+          <a  class="a1" href="/write">
+            编辑
         </a>
         </div>
       </td>
-      <hr class="layui-bg-blue">
+     
     </tr>
     
 
@@ -51,9 +59,12 @@
       <td>2016-11-28</td>
       <td>
         <div class="layui-btn-group">
+          <a class="a1" href="/write">
+            删除</a>
+            <a  class="a1" href="/write">
+            编辑
+          </a>
           
-          <button type="button" class="layui-btn">编辑</button>
-          <button type="button" class="layui-btn">删除</button>
         </div>
       </td>
     </tr>

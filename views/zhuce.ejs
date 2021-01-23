@@ -6,30 +6,40 @@
     <title>注册页面</title>
 </head>
 <body>
-    
+  
     <div class="layui-container">  
-    <h2 class="layui-bg-blue" style="text-align: center;">欢迎注册</h2>
+      <ul style="background-color:  rgb(253, 91, 145);" lay-filter=""  >
+        <h2  style="text-align: center; width: 100%;color: white;">欢迎注册</h2>
+   
+      </ul> 
+   
         <div class="layui-row">
-            <form class="layui-form" action="">
+          <form class="layui-form" action="/users/addUser" method="POST">
                 <div class="layui-form-item">
                   <label class="layui-form-label">用户名</label>
                   <div class="layui-input-block">
-                    <input type="text" name="title" required placeholder="请输入用户名" 
+                    <input type="text" name="userName" required placeholder="请输入用户名" 
                    class="layui-input">
                 </div>
             </div>
             <div class="layui-form-item">
                 <label class="layui-form-label">密码</label>
                 <div class="layui-input-block">
-                  <input type="password" name="title" required placeholder="请输入密码" 
+                  <input type="password" name="password" required placeholder="请输入密码" 
                   class="layui-input">
-                  <input type="password" name="title" required placeholder="请再次输入密码" 
+                 
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">确认密码</label>
+                <div class="layui-input-block">
+                  
+                  <input type="password" name="passwordC" required placeholder="请再次输入密码" 
                   class="layui-input">
               </div>
           </div>
           <div class="layui-form-item">
             <div class="layui-input-block">
-              <button class="layui-btn">注册</button>
+              <button type="submit" class="layui-btn layui-bg-orange">注册</button>
               <p>已经注册，<a style="color: rgb(95, 171, 238);" href="/login">立即登录</a></p>
             </div>
           </div>

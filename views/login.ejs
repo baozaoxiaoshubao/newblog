@@ -8,12 +8,19 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
      <link rel='stylesheet' href='/libs/layui/css/layui.css' /> -->
      <%- include('head', {}); %>
+     <%- include('background', {}); %>
 
     <title>Document</title>
+    <style>
+      
+    </style>
 </head>
 <body>
     <div class="layui-container">  
-        
+      <ul style="background-color:  rgb(253, 91, 145);" lay-filter=""  >
+        <h2  style="text-align: center; width: 100%;color: white;">欢迎登录</h2>
+   
+      </ul> 
         <div class="layui-row">
             <form class="layui-form" action="">
                 <div class="layui-form-item">
@@ -29,10 +36,11 @@
                   <input type="password" name="title" required placeholder="请输入密码" 
                   class="layui-input">
               </div>
+              
           </div>
           <div class="layui-form-item">
             <div class="layui-input-block">
-              <button class="layui-btn">登录</button>
+              <button class="layui-btn layui-bg-orange">登录</button>
               <p>还未注册，<a style="color: rgb(95, 171, 238);" href="/zhuce">立即注册</a></p>
             </div>
           </div>
