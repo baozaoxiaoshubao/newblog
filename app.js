@@ -4,6 +4,16 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+//导入
+//var session = require('express-session')
+
+
+//配置
+// app.user({
+//   secret:'bname',//自己
+//   resave:false,//发送
+// })
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
